@@ -22,6 +22,7 @@ jobs:
         EXCLUDE_LANG: ${{ secrets.EXCLUDE_LANG }}
         EXCLUDE_REPO: ${{ secrets.EXCLUDE_REPO }}
       run: |
+        git pull
         python scripts/main.py
     - name: Git
       run: |
