@@ -15,6 +15,9 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
+    - name: Git Pull
+      run: |
+        git pull
     - name: Run Scripts
       env:
         USER: ${{ secrets.USER }}
@@ -22,7 +25,6 @@ jobs:
         EXCLUDE_LANG: ${{ secrets.EXCLUDE_LANG }}
         EXCLUDE_REPO: ${{ secrets.EXCLUDE_REPO }}
       run: |
-        git pull
         python scripts/main.py
     - name: Git
       run: |

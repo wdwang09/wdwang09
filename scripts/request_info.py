@@ -9,7 +9,7 @@ from typing import Union, Dict
 # https://github.com/anuraghazra/github-readme-stats/blob/master/src/fetchers/top-languages-fetcher.js
 
 # learn more:
-# https://docs.github.com/cn/graphql/reference/objects#topic
+# https://docs.github.com/en/graphql/reference/objects#topic
 # https://docs.github.com/en/graphql/reference/objects#repository
 
 query = """
