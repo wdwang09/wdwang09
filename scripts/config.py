@@ -17,7 +17,7 @@ for i in range(len(exclude_lang)):
     exclude_lang[i] = exclude_lang[i].lower()
 
 exclude_repo = os.getenv("EXCLUDE_REPO")
-if exclude_lang:
+if exclude_repo:
     exclude_repo = exclude_repo.split(":")
 else:
     exclude_repo = []
