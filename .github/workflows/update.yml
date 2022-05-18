@@ -1,0 +1,32 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 10,22 * * *'
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Run Scripts
+      env:
+        USER: ${{ secrets.USER }}
+        API_TOKEN: ${{ secrets.API_TOKEN }}
+        EXCLUDE_LANG: ${{ secrets.EXCLUDE_LANG }}
+        EXCLUDE_REPO: ${{ secrets.EXCLUDE_REPO }}
+      run: |
+        python scripts/main.py
+    - name: Git
+      run: |
+        git add README.md
+        git config user.name "GitHub Actions"
+        git config user.email "None"
+        git commit -m "update README"
+        git push
