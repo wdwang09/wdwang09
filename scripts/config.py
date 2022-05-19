@@ -7,6 +7,7 @@ exclude_repo = os.getenv("EXCLUDE_REPO")  # for empty str, you can write ":"
 
 try:
     import config_private  # don't commit this file
+
     user = config_private.user
     token = config_private.token
     exclude_lang = config_private.exclude_lang

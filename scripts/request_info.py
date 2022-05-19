@@ -1,9 +1,9 @@
 from http.client import HTTPSConnection
 import json
 
-import config
-
 from typing import Union, Dict
+
+import config
 
 # query is from:
 # https://github.com/anuraghazra/github-readme-stats/blob/master/src/fetchers/top-languages-fetcher.js

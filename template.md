@@ -1,6 +1,6 @@
 # Hello
 
-😀 My programming languages:
+💻 My programming languages:
 
 ```
 {{ bar }}
