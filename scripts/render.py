@@ -1,9 +1,11 @@
 import time
 
+from typing import List
+
 import config
 
 
-def render(bars: list[str]):
+def render(bars: List[str]):
     template_file = config.template_file
     output_file = config.output_file
 

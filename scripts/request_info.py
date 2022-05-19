@@ -51,6 +51,7 @@ def request_info() -> Union[Dict, None]:
     res = connection.getresponse()
     if res.status != 200:
         print(res.status, res.reason)
+        print("Message:", eval(res.read()))
         return None
 
     data = eval(res.read())
