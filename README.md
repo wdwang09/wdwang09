@@ -3,11 +3,11 @@
 💻 My programming languages:
 
 ```
-    Python: █████████                 37.01%
-       C++: ███████                   29.72%
-        Go: ████                      17.95%
-  GDScript: █                         5.87%
-JavaScript: █                         4.98%
+    Python: █████████                 36.26%
+       C++: ███████                   29.11%
+        Go: █████                     19.62%
+  GDScript: █                         5.75%
+JavaScript: █                         4.88%
 ```
 
-Last updated on Thu May 19 21:38 2022 (UTC)
+Last updated on Fri May 20 04:05 2022 (UTC)
