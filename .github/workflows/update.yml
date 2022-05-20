@@ -30,6 +30,6 @@ jobs:
       run: |
         git add -f README.md
         git config user.name "GitHub Actions"
-        git config user.email "None"
+        git config user.email "action@github.com"
         git commit -m "update README"
         git push
