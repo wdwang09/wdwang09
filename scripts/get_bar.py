@@ -53,7 +53,8 @@ def get_bar(request_info_dict: Dict) -> List[str]:
         percentage = size / code_size_sum
         true_num = round(block_len * percentage)
         false_num = block_len - true_num
-        bar = "{}: {}{} {:.2%}".format(
+        percentage = "{:.2%}".format(percentage)
+        bar = "{}: {}{} {:>6}".format(
             lang, block_t * true_num, block_f * false_num, percentage
         )
         bars.append(bar)
